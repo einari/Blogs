@@ -25,5 +25,18 @@ For a lot of the digitalization processes its quite obvious that there are some 
 efficient. With [tens of thousands of vessels](https://www.statista.com/statistics/264024/number-of-merchant-ships-worldwide-by-type/) only in the merchant fleet, you can
 quickly see that getting rid of a lot of the paperwork would save a substantial amount for the industry.
 
-New opportunities and using new technology, such as being done in the [Smart Ropes project](https://www.youtube.com/watch?v=dDQ5PjDRk50) we've been involved with can also be part of the equation, and also save lives at the same time.
+New opportunities in using new technology, for instance the [Smart Ropes project](https://www.youtube.com/watch?v=dDQ5PjDRk50) that we've been involved with can also be part of the equation, and also save lives at the same time.
+
+On ships there are a lot of these opportunities, they are already equipped with sensors for quite a few things - but
+purposed only for telemetry, not to add intelligence based on the data collected.
+
+If we go back to the fuel element, which is the most costly part of shipping - and quickly becoming more costly. What could
+be done to save on fuel and how could software make a difference. Looking at the hull alone, a clean hull has less resistance
+in water than a dirty one. Combined with weather - going around bad weather, creating optimized routes could also play a role.
+Together with Microsoft, Cisco and Wilhelmsen - these are some of the things we are looking into into a project we've
+appropriately named "Occasionally Connected Fuel Efficient Vehicle".
+
+## Connectivity
+
+## Continuously deploying
 
