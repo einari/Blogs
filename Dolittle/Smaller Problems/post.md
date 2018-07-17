@@ -45,12 +45,30 @@ So, what is a microservice? How big is it? 1000 times larger than a nanoservice?
 At Dolittle we've had to think hard about this, so that we can provide clear guidance on the topic - as we are a platform to enable the goal and promise
 that comes with the buzz of microservices. A microservice is defined as an end-to-end deployable autonomous piece of your software. This means that
 it represents all tiers of a vertical slice in your system all the way from its **interaction layer** to the actual data storage.
+
+We've found that e-commerce is a good example to refer to for how this could be. Take the concept of a product. When you're going to your favorite e-commerce
+online for your shopping, you're looking at a catalog and searching for different products and looking at details of these. If you dive into the domain
+and look at what product is often modelled as in traditional database designs, you'll often find it modelled as a representation of all the different
+aspects of the business. The product table might include things that are relevant for the warehouse, the carrier, purchasing and
+the user who is looking in the catalog.
+
+![](./ecommerce.png)
+
+While the person in the warehouse is talking about boxes, not products - and their location in the warehouse. They're also
+interested in the dimensions of it and potentially the weight in order to optimize the warehouse. In the warehouse they also
+keep track of the stock of every item. They're not really interested in details about the product itself. They're also not
+using the same user interface as the the shopper, they're a very different actor all together. The same applies to the carrier,
+who only needs to know where to ship it. In purchasing its vital to know how much the item can be acquired for and what is the
+retail price. These are just 4 of probably more bounded contexts, they all share the characteristics of different lingo related
+to the same concept, different domain experts, different user interaction and represents the source of truth for their respective
+aspect.
+
 To find the divide we have come up with the following criteria to look for.
 
 ### Ubiquitous language
 
 At Dolittle we are focused around [Doman Driven Design](), expressing a domain using the correct lingo. Within systems one can find multiple
-lingo describing different aspects of a concept. This lingo is called the ubiquitous language; the unambiguous language that the domain experts 
+lingo describing different aspects of a concept. This lingo is called the ubiquitous language; the unambiguous language that the domain experts
 representing the aspect talks.In a bounded context, there should only be one representation of a concept.
 
 ### Domain Experts
