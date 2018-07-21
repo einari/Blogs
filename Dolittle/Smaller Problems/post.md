@@ -23,6 +23,9 @@ about the consequences. This would be a benefit even if you have a small team th
 your **time to learning (TTL)** would be smaller - and you'd be iterating more healthier as you would get learn from your software and feedback
 continuously, rather than having to wait around. By applying things like the [SOLID principles]() and [Separation of Concerns]() and sticking to
 fixing smaller software problems, you can start enabling this scenario and it has the side-effect of making your codebase more sustainable.
+Another friction point is if a part of your system becomes unavailable for some reason (e.g. a bug in the system or infrastructural problems),
+having parts of your system running is better than having it all be down. In fact, it can be very costly if everything goes down, breaking it
+up could reduce that cost.
 
 ## Software as a Service
 
