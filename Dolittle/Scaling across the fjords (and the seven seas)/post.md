@@ -34,9 +34,53 @@ If we go back to the fuel element, which is the most costly part of shipping - a
 be done to save on fuel and how could software make a difference. Looking at the hull alone, a clean hull has less resistance
 in water than a dirty one. Combined with weather - going around bad weather, creating optimized routes could also play a role.
 Together with Microsoft, Cisco and Wilhelmsen - these are some of the things we are looking into into a project we've
-appropriately named "Occasionally Connected Fuel Efficient Vehicle".
+appropriately named "Occasionally Connected Fuel Efficient Vehicle". This project is to prove architecture and infrastructure
+for the marine environment. With vessels not being connected to the cloud all the time, meaning that we need compute power on
+the **edge**.
 
 ## Connectivity
 
+Even though the vessels aren't connected all the time, you do need to have them connected occasionally. First of all, there are
+events that gets generated onboard that you need to transfer to the cloud. Some of these events are coming from IoT scenarios,
+and we use the events to train Machine Learning models in the cloud. Other events are coming from consequences of those IoT
+scenarios and are translated into **Domain Events** or is in fact generated as a direct consequence of users interacting with
+the system. With vessels sailing across vast distances and across the globe, you simply cannot rely on just one type of connectivity.
+This boils down to availability and cost. Take something like the typical mobile technologies like GSM/3G/LTE, availability in
+near coast scenarios is pretty good across the globe - but the roaming costs can skyrocket through the roof. In port you might
+be lucky to have Wifi connectivity. When you don't have these there are other solutions ranging from things like LoRaWan - if
+there are vessels connected could form a mesh. Similarly there is narrow-band solutions. Common for both these is low bandwidth.
+There is also satellite based solutions and many many more options. Its basically a jungle of solutions.
+We need to be completely agnostic towards this and work with all partners, but our software needs to have context awareness
+and be able to make decisions based on the type of connectivity available and its cost factor.
+The other side of connectivity is our ability to push from the cloud onto the vessel as well.
+
 ## Continuously deploying
+
+With our **continuous improvement** pipeline we are guaranteeing that the software will be put in production as fast as possible
+based on the deployment strategy configured. This becomes slightly more complex when you have vessels that are occasionally connected
+and you never know when they are connected. The complexity lies in versioning the software. With systems that have both a cloud
+component and a vessel component and they work together, the complexity increases even further. The ultimate goal is also that
+it should all be transparent for the end-user. They only care about doing their job, not version the software is - which is
+as it should be. With **edge** deployments, multiple tenants and multiple vessels per tenant - you might need multiple versions
+of the software running.
+
+Events, as described in how our [Event Horizon]() system works can be migrated between different versions. This makes it easier to
+have one version in the cloud and another on the edge. However, if there are major breaking changes between versions - this might
+not be as easy though. There are times when we have to break compatibility, and this should be indicated by the semantic versioning
+of the application. Going from a major version of 1.x.x to 2.x.x should be an indication that these versions are very different.
+
+Since everything we do is Docker based and we have complete control over the building of these images, we have the luxury of optimizing
+for connectivity. With Dockers layering system, you basically get Docker to pull the difference between versions and it will only
+pull what has changed - or the layers that has changed. If you build the Docker images in a good way, you keep the layers small and
+only your application code should effectively be pushed across.
+
+## Multi multi multi
+
+The products being built for [Wilhelmsen]() are all multi tenant solutions. This means that the products will offer a possibility
+for Wilhelmsens customers to sign-up for as a SaaS solution. Within these solutions you provision software to run and be connected
+onboard multiple vessels. These vessels belong to the customer. Every product being built by Wilhelmsen has at least one [bounded
+context](smaller problems post), and these are autonomous and they are also segregated by tenant. This means that we're looking at
+1 event store per bounded context per tenant and at least 
+
+## Monitoring
 
