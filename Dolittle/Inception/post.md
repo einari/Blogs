@@ -10,6 +10,13 @@ The benefit of working like this is that we get to try out things in real world 
 and hoping we're on target. It helps us keep the feedback loop and **time to learning (TTL)** down, so that we are delivering
 more accurately with the hope of catching issues even before anyone else does.
 
+## Tenancy
+
+Dolittle offers a hosted experience, the hosted experience is capable of taking any application and build and deploy it.
+The goal is that anyone will be able to sign up and get an application up and running within minutes. When you're signing up
+you're creating a tenant representing you as a tenant of Dolittle. You're then inside Studio being able to setup your applications.
+Studio is another application running in Dolittle under the Dolittle tenant. Again, a full inception is going on.
+
 ## Pipelines
 
 ## Hosting
