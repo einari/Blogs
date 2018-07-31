@@ -9,23 +9,23 @@ software getting updates on a more regular basis, be it new features, bug fixes 
 box saying there is an update and when applied you'd have the following new features. The big change is how we approach the development cycles.
 Since we no longer need to ship physical media, we can approach the process of delivery differently and allow for a tighter **feedback loop**.
 In many cases the approach of how we write the software has not changed. We're dragging behind us the decades of weight of still making monolithic
-software. This approach often lead to [tight couplings]() in software and with the principle of [DRY (Don't Repeat Yourself)]() in hand making software
-far more generic than it should be. This is where the buzz of [Microservices]() comes in and is supposed to save the day.
-Lets dwell a bit on the why here. Why isn't it ok to just continue developing in the way you are. Actually, you might have very good reasons to not
-change at all - you might already have it all under control and have a productive team, then there probably is no reason to change. But if you sense
-that your software quality is not as great as at it should be, or you're not having the velocity you used to have - you might want to start considering
-how you're developing your software. The primary problem one is trying to solve is to break dependencies.
+software. This approach often lead to [tight couplings]() in software and with the principle of [DRY (Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+in hand making software far more generic than it should be. This is where the buzz of [Microservices](https://en.wikipedia.org/wiki/Microservices) comes
+in and is supposed to save the day. Lets dwell a bit on the why here. Why isn't it ok to just continue developing in the way you are. Actually, you might
+have very good reasons to not change at all - you might already have it all under control and have a productive team, then there probably is no reason to
+change. But if you sense that your software quality is not as great as at it should be, or you're not having the velocity you used to have - you might want
+to start considering how you're developing your software. The primary problem one is trying to solve is to break dependencies.
 Both on a code level and on an organizational level. Breaking dependencies removes friction; friction to release. You want to have as little friction
 as possible to be able to release. If one feature has to wait for another feature before it can be released, you might have an unhealthy friction in
 your system. The goal is to become obsessive on releasing, not at any cost; quality matters - but drive your team(s) towards release.
 The ideal scenario is that your software with the right boundaries can be released completely independently, without having to think
 about the consequences. This would be a benefit even if you have a small team that is maintaining the entire software product. It would mean that
 your **time to learning (TTL)** would be smaller - and you'd be iterating more healthier as you would get learn from your software and feedback
-continuously, rather than having to wait around. By applying things like the [SOLID principles]() and [Separation of Concerns]() and sticking to
-fixing smaller software problems, you can start enabling this scenario and it has the side-effect of making your codebase more sustainable.
-Another friction point is if a part of your system becomes unavailable for some reason (e.g. a bug in the system or infrastructural problems),
-having parts of your system running is better than having it all be down. In fact, it can be very costly if everything goes down, breaking it
-up could reduce that cost.
+continuously, rather than having to wait around. By applying things like the [SOLID principles](https://en.wikipedia.org/wiki/SOLID) and
+[Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) and sticking to fixing smaller software problems, you can start enabling
+this scenario and it has the side-effect of making your codebase more sustainable. Another friction point is if a part of your system becomes unavailable
+for some reason (e.g. a bug in the system or infrastructural problems), having parts of your system running is better than having it all be down. In fact,
+it can be very costly if everything goes down, breaking it up could reduce that cost.
 
 ## Software as a Service
 
@@ -70,9 +70,9 @@ To find the divide we have come up with the following criteria to look for.
 
 ### Ubiquitous language
 
-At Dolittle we are focused around [Doman Driven Design](), expressing a domain using the correct lingo. Within systems one can find multiple
-lingo describing different aspects of a concept. This lingo is called the ubiquitous language; the unambiguous language that the domain experts
-representing the aspect talks.In a bounded context, there should only be one representation of a concept.
+At Dolittle we are focused around [Doman Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design), expressing a domain using the correct lingo.
+Within systems one can find multiple lingo describing different aspects of a concept. This lingo is called the ubiquitous language; the unambiguous language
+that the domain experts representing the aspect talks.In a bounded context, there should only be one representation of a concept.
 
 ### Domain Experts
 
