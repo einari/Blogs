@@ -9,14 +9,15 @@ software getting updates on a more regular basis, be it new features, bug fixes 
 box saying there is an update and when applied you'd have the following new features. The big change is how we approach the development cycles.
 Since we no longer need to ship physical media, we can approach the process of delivery differently and allow for a tighter **feedback loop**.
 In many cases the approach of how we write the software has not changed. We're dragging behind us the decades of weight of still making monolithic
-software. This approach often lead to [tight couplings]() in software and with the principle of [DRY (Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-in hand making software far more generic than it should be. This is where the buzz of [Microservices](https://en.wikipedia.org/wiki/Microservices) comes
-in and is supposed to save the day. Lets dwell a bit on the why here. Why isn't it ok to just continue developing in the way you are. Actually, you might
-have very good reasons to not change at all - you might already have it all under control and have a productive team, then there probably is no reason to
-change. But if you sense that your software quality is not as great as at it should be, or you're not having the velocity you used to have - you might want
-to start considering how you're developing your software. The primary problem one is trying to solve is to break dependencies.
-Both on a code level and on an organizational level. Breaking dependencies removes friction; friction to release. You want to have as little friction
-as possible to be able to release. If one feature has to wait for another feature before it can be released, you might have an unhealthy friction in
+software. This approach often lead to [tight couplings](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29) in software and with the
+principle of [DRY (Don't Repeat Yourself)](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) in hand making software far more generic than it should be.
+This is where the buzz of [Microservices](https://en.wikipedia.org/wiki/Microservices) comes in and is supposed to save the day. Lets dwell a bit on the why here.
+Why isn't it ok to just continue developing in the way you are. Actually, you might have very good reasons to not change at all - you might already have it all
+under control and have a productive team, then there probably is no reason to change. But if you sense that your software quality is not as great as at it
+should be, or you're not having the velocity you used to have - you might want to start considering how you're developing your software.
+The primary problem one is trying to solve is to break dependencies. Both on a code level and on an organizational level.
+Breaking dependencies removes friction; friction to release. You want to have as little friction as possible to be able to release.
+If one feature has to wait for another feature before it can be released, you might have an unhealthy friction in
 your system. The goal is to become obsessive on releasing, not at any cost; quality matters - but drive your team(s) towards release.
 The ideal scenario is that your software with the right boundaries can be released completely independently, without having to think
 about the consequences. This would be a benefit even if you have a small team that is maintaining the entire software product. It would mean that
