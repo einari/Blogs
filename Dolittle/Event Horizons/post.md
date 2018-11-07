@@ -59,4 +59,7 @@ tenant, user and when it occurred.
 ## Technically
 
 The implementation is using [gRPC](https://www.grpc.io) for connectivity, which then relies on [protobuf]().
-We define the services through PROTO3 definitions
+As a general principle we define all our services and message formats using `PROTO3` definitions that are found [here]https://github.com/dolittle/Runtime/tree/master/Protobuf).
+Specifically for our Event Horizon, you'll find it [here](https://github.com/dolittle/Runtime/tree/master/Protobuf/dolittle/interaction/events.relativity).
+
+
