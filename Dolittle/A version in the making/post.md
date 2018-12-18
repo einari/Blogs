@@ -21,7 +21,8 @@ Our philosophy is to have an **always moving forward** type of system. This impl
 
 ## Exploded software
 
-Our legacy; [Bifrost](https://github.com/dolittle/bifrost) was for all intents and purposes a single .NET assembly. Sure, we had a couple more - but the core runtime, SDK and all was in one package. This was one of the things we wanted to address when working on version 2. With the single package, we had created a lot of friction in the codebase by having couplings that were almost impossible to break. We call it friction because we started having problems with flexibility and changeability. At Dolittle we're very focused on building high quality software that embraces change and adheres to a set of principles, such as [SOLID](), [Separation of Concerns](). 
+Our legacy; [Bifrost](https://github.com/dolittle/bifrost) was for all intents and purposes a single .NET assembly. Sure, we had a couple more - but the core runtime, SDK and all was in one package. This was one of the things we wanted to address 
+working on version 2. With the single package, we had created a lot of friction in the codebase by having couplings that were almost impossible to break. We call it friction because we started having problems with flexibility and changeability. At Dolittle we're very focused on building high quality software that embraces change and adheres to a set of principles, such as [SOLID](), [Separation of Concerns](). 
 
 To put ourselves in the pit of success for the next phase of the platform, we had to explode the single assembly and see where the pieces landed.
 
@@ -43,68 +44,45 @@ In addition to this, we've introduced the following core components:
 | MongoDB EventStore | 1 | Development purposed eventstore |
 | Azure EventStore | 1 | Leveraging Azure CosmosDB as the eventstore |
 
-One of the goals we also had was to attack the frontend differently. We originally had [our
-own Single Page Application framework](https://github.com/dolittle/Bifrost/tree/master/Source/Bifrost.JavaScript) built on top of [Knockout](https://knockoutjs.com).
-With a fragmented world in JavaScript and Web, we decided early on to be agnostic and support
-whatever needs to be supported. This means we had to decide where to put what.
-Everything that is general across the different frameworks had to in one place and everything
-specific in its own. We knew we wouldn't have the capacity to deal with all frameworks at the same time
-and with a love for [MVVM]() / [Presentation Model](); [Aurelia](http://aurelia.io) was
-the framework we wanted to use for our own applications, such as [the Studio](https://dolittle.studio) we're in the midst of building.
-Also, an important piece of the puzzle is to make everything look good - we decided early on
-to tackle this as well - instead of using existing frameworks for styling that was out there.
+One of the goals was to change our approach in the frontend. We had [our own Single Page Application framework](https://github.com/dolittle/Bifrost/tree/master/Source/Bifrost.JavaScript) built on top of [Knockout](https://knockoutjs.com).
+
+With the fragmented world in JavaScript and Web, we decided early on to be framework agnostic and support whatever a project needs. This means we had to decide where to put what. Everything that is general across the different frameworks had to be in one place and everything specific in its own. 
+
+We knew we wouldn't have the capacity to deal with all frameworks at the same time and with a love for [MVVM]() / [Presentation Model](); [Aurelia](http://aurelia.io) was the framework we wanted to use for our own applications, such as [the Studio](https://dolittle.studio) we're in the midst of building.
+
+Also, an important piece of the puzzle is to make everything look good - we decided early on to tackle this as well - instead of using existing frameworks for styling that was out there.
 
 This gave us then the following packakges:
 
 | Repository | # of packages | Description |
-| ---------- | ------------- | ----------- |
+| ---------- | ------------- | ----------- |
 | Dolittle Styles | 1 | Our styles framework |
-| Common Client | 4 | Common client functionality |
-| Aurelia Client | 1 | Aurelia specific client support |
-| Aurelia Components | 1 | Reusable Aurelia web components |
+| Common Client | 4 | Common client functionality |
+| Aurelia Client | 1 | Aurelia specific client support |
+| Aurelia Components | 1 | Reusable Aurelia web components |
 
 On top of all this we also have our tooling we're working on:
 
 | Repository | # of packages | Description |
-| ---------- | ------------- | ----------- |
+| ---------- | ------------- | ----------- |
 | CLI | 1 | Our Command Line Interface for everything Dolittle |
 | VSCode | 1 | Our Visual Studio Code extension |
 
 In addition to all this we're also heads down working on solutions for Digital Twins,
 WebAssembly support and more.
 
-The purpose of the explosion is to be able to version each repository individually and
-provide a way to work in isolation for each of them and have independent release cadences
-and improve each repository as fast as they can without having to worry about the
-dependency load of everything consuming it. This is where SemVer and abiding strictly to it
-comes in for us. You can find all our NuGet packages [here](https://www.nuget.org/packages?q=dolittle)
+The purpose of the explosion is to be able to version each repository and provide a way to work in isolation for each of them. This allows for each repository to have independent release cadences and changed without worrying about the dependency load of everything consuming it. This is where SemVer and abiding strictly to it comes in for us. You can find all our NuGet packages [here](https://www.nuget.org/packages?q=dolittle)
 and NPM paackages [here](https://www.npmjs.com/search?q=dolittle).
 
 ## How did we know it was time to release?
-
-Obviously, close to 2 years in **alpha** is a dead giveaway that we should have released a major
-release quite some time ago. But it really wasn't that clear cut for us. Even though we strive towards
-releasing as early as we can, so that we can understand more and continuously improve from it -
+Obviously, close to 2 years in **alpha** is a dead giveaway that we should have released a major release quite some time ago. But it really wasn't that clear cut for us. Even though we strive towards releasing as early as we can, so that we can understand more and continuously improve from it -
 we wanted to have a certain level of maturity of our APIs before we called it 2.0.0.
-From working directly with customers, such as the [Red Cross CBS project](http://github.com/ifRCGo/cbs) and
-others - we've stabilized the platform and APIs in the **alpha** period.
+
+From working directly with customers, such as the [Red Cross CBS project](http://github.com/ifRCGo/cbs) and others - we've stabilized the platform and APIs in the **alpha** period.
 
 ## Cascades of versions
 
-One of the discoveries we've done with regards to versioning is that when working in a separated
-way like this, and when you want to bubble up minor and patch releases - it becomes hard when the
-applications leveraging Dolittle is taking a dependency to the top layer. We found that at least when
-using [NuGet]() for our packages, and even though the intermediate packages in between are taking wildcard
-dependencies on minor - the top layer won't get changes from the bottom automatically. This comes down
-to how .NET Core does its bindings internally when building packages. In order for us
-guarantee that you get bug and security fixes from the bottom layers, we had to
-cascade build everything. This is now something we're building into our own build routines to be able to
-do this.
+We discovered that applications with a top-layer dependency to Dolittle struggled to update patches and minor releases of their dependencies. When using [NuGet]() for our packages, and even though the intermediate packages are taking wildcard dependencies on minor, the top layer won't get changes from the bottom automatically. This comes down to how .NET Core does its bindings internally when building packages. In order for us guarantee that you get bug and security fixes from the bottom layers, we had to cascade build everything. This is now something we're building into our own build routines to be able todo this.
 
 ## Moving forward
-
-Our universe is constantly expanding; more packages, more versions and more deployables in general.
-We will do our best to make the journey for anyone using Dolittle as predictable as possible through
-versioning and also changelogs. Roadmaps is also something we're trying to become better at - we need
-a way to express this in a way that matches how we work. We're still trying to discover this. Look closely
-at this place and any of our social media streams (links....).
+Our universe is constantly expanding; more packages, more versions and more deployables in general. We will do our best to make the journey for anyone using Dolittle as predictable as possible through versioning and also changelogs. Roadmaps are also something we're trying to become better at - we need a way to express this in a way that matches how we work. We're still trying to discover this. Look closely at this place and any of our social media streams (links....).
