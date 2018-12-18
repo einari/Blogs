@@ -1,49 +1,29 @@
 
 # A version in the making
 
-Its been almost a year since we founded Dolittle. During that period we've been hard at work
-getting the next version of our platform out; 2.0.0. We finally hit the release button and
-got it out it. Its been even longer, almost another year that the versions coming out has
-been marked with the pre-release tag of **alpha**.
+Its been almost a year since we founded Dolittle. During that period we've been hard at work getting the next official release of our platform out; 2.0.0. Yesterday we finally hit the release button and got it out it. It's been longer in the making though; almost 2 years with the pre-release tag of **alpha**.
 
 CAKE IMAGE
 
 ## Where is version 1.x?
 
-How did we reach version 2 level without going through a version 1 you might be asking.
-Well; Dolittle has a legacy that has been close to 10 years in the making, called [Bifrost](https://github.com/dolittle/bifrost).
-2 years ago we decided to rename the project and position it differently and also grow it
-towards becoming a true microservice oriented solution. The legacy is considered the version
-1 of Dolittle and to us it felt natural to call it a version 2. There is also another hidden
-gem in why 2 makes sense; this is the second time around with Dolittle as a company.
-Although with a very different context and approach this time around, we had Bifrost as a
-centerpiece also in version 1 of the company.
+"How did we reach version 2 level without going through a version 1?", you might be asking. Well, Dolittle has a legacy that has been close to 10 years in the making called [Bifrost](https://github.com/dolittle/bifrost). 2 years ago we decided to re-position the product and evolve it towards becoming a true microservice oriented solution. We refer to Bifrost as version 1 and it felt natural to start Dolittle off with version 2. 
+
+There is also another hidden gem in why 2 makes sense; this is the second time around with Dolittle as a company. The context and approach was different, but we had Bifrost as a centerpiece in version 1 of the company. That's a story for another time, though.
 
 ## Versioning
 
-Versioning software is very hard, and in our opinion probably *the* hardest thing one can
-deal with. The reason this is hard is due to dependencies; what will break from changes
-and how do we communicate that well and also make sure we are consistent. In a **always moving forward**
-type of system where one does not look back and patch older versions, one has to be
-very careful with this. With APIs that are going to be used by other software, this becomes
-even harder and you have to be much more careful.
+Versioning software can be very hard. And for a public facing framework, it's one of *the* hardest thing one can deal with, in our experience. The reason this is hard is due to dependencies; what will break from changes and how do we communicate that well and also make sure we are consistent. 
 
-[Semantic Versioning](https://semver.org) will be the key to everything we do moving forward.
-We've been adhering to it for the last 2 years; but it was easy to adhere to it - because
-we had the **alpha** tag :). Moving forward, we will put forward the discipline needed to
-have predictable versions. We've written it all down [here](https://dolittle.io/general/versioning/).
+Our philosophy is to have an **always moving forward** type of system. This implies not looking back and patching older versions. With API's that are at the very core of other software products, this becomes even harder and you have to be much more careful.
+
+[Semantic Versioning](https://semver.org) is the key to everything we do moving forward. We've been adhering to it for the last 2 years; but it was easy to adhere to it - because we had the **alpha** tag :). Moving forward, we will put forward the discipline needed to have predictable versions. We've written it all down [here](https://dolittle.io/general/versioning/).
 
 ## Exploded software
 
-Our legacy; [Bifrost](https://github.com/dolittle/bifrost) was for all intents and purposes a single
-.NET assembly. Sure, we had a couple more - but the core runtime, SDK and all was in one package.
-This was one of the things we wanted to address when working on version 2. With the single package
-we had, we had basically unintentionally created a lot of friction in the codebase by having couplings
-that was close to impossible to break. We call it friction because we started having problems with
-flexibility and changeability. At Dolittle we're very focused on building high quality software adhering
-to a set of principles, such as [SOLID](), [Separation of Concerns]() and in general embracing change.
-To put ourselves in the pit of success for the future, we had to explode the single assembly and
-see where the pieces landed.
+Our legacy; [Bifrost](https://github.com/dolittle/bifrost) was for all intents and purposes a single .NET assembly. Sure, we had a couple more - but the core runtime, SDK and all was in one package. This was one of the things we wanted to address when working on version 2. With the single package, we had created a lot of friction in the codebase by having couplings that were almost impossible to break. We call it friction because we started having problems with flexibility and changeability. At Dolittle we're very focused on building high quality software that embraces change and adheres to a set of principles, such as [SOLID](), [Separation of Concerns](). 
+
+To put ourselves in the pit of success for the next phase of the platform, we had to explode the single assembly and see where the pieces landed.
 
 The single assembly became the following:
 
