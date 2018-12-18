@@ -6,6 +6,8 @@ getting the next version of our platform out; 2.0.0. We finally hit the release 
 got it out it. Its been even longer, almost another year that the versions coming out has
 been marked with the pre-release tag of **alpha**.
 
+CAKE IMAGE
+
 ## Where is version 1.x?
 
 How did we reach version 2 level without going through a version 1 you might be asking.
