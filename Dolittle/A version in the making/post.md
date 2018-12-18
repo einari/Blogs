@@ -30,7 +30,7 @@ To put ourselves in the pit of success for the next phase of the platform, we ha
 The single assembly became the following:
 
 | Repository | # of packages | Description |
-| ---------- | ------------- | ----------- |
+| ---------- | ------------- | ----------- |
 | [Fundamentals](https://github.com/dolittle/dotnet.fundamentals) | 37 | Fundamental reusable building blocks |
 | [Runtime](https://github.com/dolittle/runtime) | 18 | Our core microservice, CQRS, domain driven engine |
 | [C# SDK](https://github.com/dolittle/dotnet.sdk) | 19 | The C# SDK for working with the Runtime |
@@ -38,7 +38,7 @@ The single assembly became the following:
 In addition to this, we've introduced the following core components:
 
 | Repository | # of packages | Description |
-| ---------- | ------------- | ----------- |
+| ---------- | ------------- | ----------- |
 | [AspNetCore](https://github.com/dolittle-interaction/aspnetcore) | 6 | Core functionality when working in an ASP .NET Core app |
 | [Autofac](https://github.com/dolittle-extensions/DotNET.DependencyInversion.Autofac) | 1 | Specific support for Autofac as the IoC container |
 | [MongoDB ReadModels](https://github.com/dolittle-extensions/ReadModels.MongoDB) | 1 | Support for MongoDB readmodels |
