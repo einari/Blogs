@@ -41,7 +41,7 @@ that was close to impossible to break. We call it friction because we started ha
 flexibility and changeability. At Dolittle we're very focused on building high quality software adhering
 to a set of principles, such as [SOLID](), [Separation of Concerns]() and in general embracing change.
 To put ourselves in the pit of success for the future, we had to explode the single assembly and
-see where the pieces land.
+see where the pieces landed.
 
 The single assembly became the following:
 
@@ -95,7 +95,8 @@ The purpose of the explosion is to be able to version each repository individual
 provide a way to work in isolation for each of them and have independent release cadences
 and improve each repository as fast as they can without having to worry about the
 dependency load of everything consuming it. This is where SemVer and abiding strictly to it
-comes in for us.
+comes in for us. You can find all our NuGet packages [here](https://www.nuget.org/packages?q=dolittle)
+and NPM paackages [here](https://www.npmjs.com/search?q=dolittle).
 
 ## How did we know it was time to release?
 
@@ -117,3 +118,11 @@ to how .NET Core does its bindings internally when building packages. In order f
 guarantee that you get bug and security fixes from the bottom layers, we had to
 cascade build everything. This is now something we're building into our own build routines to be able to
 do this.
+
+## Moving forward
+
+Our universe is constantly expanding; more packages, more versions and more deployables in general.
+We will do our best to make the journey for anyone using Dolittle as predictable as possible through
+versioning and also changelogs. Roadmaps is also something we're trying to become better at - we need
+a way to express this in a way that matches how we work. We're still trying to discover this. Look closely
+at this place and any of our social media streams (links....).
