@@ -1,0 +1,1 @@
+On event sourcing and how there can be only one source of truth
