@@ -14,11 +14,12 @@ in one word; it would by **lucky**.
 
 ## ... work with the best team
 
-I know everyone says this; but we truly have got the best team for the start of our *journey*.
-Culture at any workplace is by far the most important thing you have. It is the reason people enjoy going to
-work.
+I know everyone says this; but we truly have got the best team for the starting our *journey* and take us to the next level.
+We have a team with great knowledge and expertise in all aspects of software development. A very balanced team enabling us to
+think holistically about the entire process of building software.
 
-If you have bad culture, its just not as motivating going to work. And the job becomes just that; a job.
+As you know; culture at any workplace is by far the most important thing you have. It is the reason people enjoy going to
+work. If you have bad culture, its just not as motivating going to work. And the job becomes just that; a job.
 Being a startup, we'd have to discover our culture as we've moved along. It is something we've gradually grown
 into spending more and more clock cycles on. One thing we've had since the beginning is our own Teams Channel
 on culture - where we discuss the topic.
