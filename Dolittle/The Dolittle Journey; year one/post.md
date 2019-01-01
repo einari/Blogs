@@ -84,11 +84,15 @@ succeed at a startup, or in fact at anything; you have to be hungry. You have to
 status quo! It is the belief of making a difference, making something different - something great that gets
 me going. And this is the thing that has been in all startups I've worked at.
 
-To keep this hunger, one needs to stay curious and creative. Thats where a balanced team of people comes into
-play; play on the difference between the team members.
+To keep this hunger, one needs to stay curious and creative. That is where a balanced team of people comes into
+play; play on the difference between the team members. Embrace the strengths of one another. Be humble!
+Make your work environment a safe place for speaking ones mind - everyone should park their egos.
+Its the thing that will keep new ideas flowing.
 
-In fact you should completely embrace it, make your work environment a safe place
-for speaking ones mind - everyone should park their egos. Its the thing that will keep new ideas flowing.
+Startups has a certain feeling to it. Some of the aspects from the early days of a startup will go away as one
+mature. But the thing that should never go away is the creativity, the velocity, the sense of urgency.
+To keep innovation going, you have to enable your organization and create the space for everyone to thrive and
+have ideas that are not just ideas, but are considered and executed on when they are good ideas.
 
 ## The Journey
 
