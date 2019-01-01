@@ -67,7 +67,7 @@ designed a daily routine that will make this even easier to capture - so that we
 Our *journey* started with someone believing in the message we have. This belief is what got us the funding.
 Dolittle is a joint venture with [Wilhelmsen](https://www.wilhelmsen.com) and the founders, without people
 believing in us we'd never get this funding. In addition to that, customers who took a chance and believed in
-us has kept us going. I feel very humble on behalf of Dolittle to have gained the trust of those believing in
+us has kept us going. I feel very humble on behalf of Dolittle to have the trust from those believing in
 us.
 
 We are not going to let you down. It is crucial to have people around you that believes in what you're
