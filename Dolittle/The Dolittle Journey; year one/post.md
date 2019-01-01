@@ -33,8 +33,8 @@ I'm so lucky to be part of this team.
 ## ... truly put that dent in the universe
 
 The *journey* we're on is all about creating the right toolbox to put developers in the pit of success.
-We use the following message to try to capture it: "Empower developers to create great, sustainable, maintainable software so that they
-can make their users feel like heroes."
+We use the following message to try to capture it: **"Empower developers to create great, sustainable, maintainable software so that they
+can make their users feel like heroes."**
 
 This is all about democratization. Creating software that will live for years is hard to do, or at least
 if you want something that is evergreen in the sense that the software is easily maintainable over time
