@@ -60,7 +60,7 @@ We're lucky as an organization to be doing both our own product development and 
 for customers, delivering real world solutions through our **Customer Success Unit**. This is a great opportunity
 for us to understand the needs and challenges being faced in software development. Over the last year, we've
 gradually gotten better at understanding this opportunity and making it part of our process. Moving on, we've
-established a daily routine that will make this even easier to capture - so that we deliver the right thing.
+designed a daily routine that will make this even easier to capture - so that we deliver the right thing.
 
 ## ... have people that believes in us
 
