@@ -115,7 +115,7 @@ a whole set of tools that there are no references to yet. This is were our journ
 
 On top of this, we're doing a lot of effort in providing predictable workflows and hosting environments for this.
 And also discovering how it all fits together holistically with different interaction layers, such as web, mobile,
-desktop APIs, bots and more.
+desktop, APIs, bots and more.
 
 An Important aspect for a lot of the customers we see is also to be able to create digital twins, to better
 monitor and operate physical equipment. Democratizing this involves understanding how to provide developers with
