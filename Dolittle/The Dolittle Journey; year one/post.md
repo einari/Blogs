@@ -131,6 +131,7 @@ I'm super excited about the foundation we've build in the first year and can't w
 for us.
 
 Happy new year to all Dolittlers, partners, customers, our board - and everyone else!
+Thanks to everyone that has been part of the journey and believing in what we're doing.
 We're really excited about the future and what it holds.
 
 #MakingADent
