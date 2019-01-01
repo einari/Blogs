@@ -70,9 +70,11 @@ believing in us we'd never get this funding. In addition to that, customers who 
 us has kept us going. I feel very humble on behalf of Dolittle to have the trust from those believing in
 us.
 
-We are not going to let you down. It is crucial to have people around you that believes in what you're
+It is crucial to have people around you that believes in what you're
 doing, it is what makes you thrive and motivate you to take it to the next level. At the same time, it
 should never be a blind trust - we want to be constantly challenged. Keep us on our toes and honest.
+
+We are grateful for the support and belief in us; **we are not going to let you down**.
 
 ## Being a startup
 
