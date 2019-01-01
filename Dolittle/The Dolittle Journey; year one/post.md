@@ -44,7 +44,7 @@ that makes it simpler to do end to end software.
 
 Our goal is to enable every developer out there in making technology accessible to everyone.
 
-This is what we call **"Equalizing the playing field"**.
+This is what we refer to as **"Equalizing the playing field"**.
 
 ## ... be able to be part of solving real world problems
 
