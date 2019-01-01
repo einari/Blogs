@@ -49,7 +49,7 @@ This is what we refer to as **"Equalizing the playing field"**.
 ## ... be able to be part of solving real world problems
 
 At the heart of everything we do is a principle of keeping ourself grounded and honest. We are not building tools
-just for the sake of the tools, we are building the tools we build with a foundation in real world needs.
+for the sake of building tools, we are building the tools we build with a foundation in real world needs.
 Sure, some of these needs are identified by ourselves. Both from past line-of-business application development
 experience we all have in the team, but also from needs we have today.
 
