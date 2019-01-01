@@ -6,7 +6,7 @@ Journey? Its a job, you might proclaim. Well, sure; it is a job. But I would lik
 think that it differs from a lot of other jobs. Not just technically as in there is a difference between different
 professions, but even within the software industry - I like to think that working at Dolittle is different.
 
-Let me get back to the journey part later, as I really want to make this post focus on something else.
+Let me get back to the journey part later, as I really want to make this post primarily about something else.
 We're now a year into this *journey* and I want to share my perspective on that. If I were to sum up the first year
 in one word; it would by **lucky**.
 
@@ -96,8 +96,10 @@ from building more of the same. The typical n-tier architecture approach and the
 that is often found in software development, especially line-of-business applications is not something we believe
 is the best approach.
 
-We find comfort in principles like CQRS, EventSourcing, SOLID, Separation of Concerns,
-Domain Driven Design, Microservices. And we've chosen to make this our core.
+We find comfort in principles like [CQRS](https://en.wikipedia.org/wiki/Command–query_separation#Command_query_responsibility_segregation),
+[EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html), [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)),
+[Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns), [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design),
+[Microservices](https://en.wikipedia.org/wiki/Microservices). We've chosen to make these our core principles.
 
 Democratizing a new approach to software development that enables software to be build in a very different way means
 we have to understand the implications of making the principles mentioned approachable.
