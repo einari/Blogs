@@ -98,7 +98,7 @@ have ideas that are not just ideas, but are considered and executed on when they
 
 What is this *journey* you speak of, you might be asking yourself.
 We call it a journey because its very much a journey of discovery. Our foundation of principles leads us away
-from building more of the same. The typical n-tier architecture approach and the focus on typical "forms over data"
+from building more of the same. The typical n-tier architecture approach and "forms over data" focused solutions
 that is often found in software development, especially line-of-business applications is not something we believe
 is the best approach.
 
