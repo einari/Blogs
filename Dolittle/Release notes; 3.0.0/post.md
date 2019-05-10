@@ -22,7 +22,7 @@ For any applications this now means you need to have the following package refer
 
 ## WebAssembly
 
-The thing that set in motion the cascade of changes is our [WebAssembly support](https://github.com/dolittle-interaction/WebAssembly). Our support is still very much a work in progress and we do have things that have yet to be implemented and also a bit of work to be left for optimization and improving the development story. But all in all we're very happy with where we are and what we have got thus far. To get started, please read our [getting started guide](https://dolittle.io/interaction/webassembly/getting_started/). We also presented this at the London PWA meetup earlier this week as you can see [here](https://skillsmatter.com/skillscasts/13836-going-enterprise-in-the-browser).
+The thing that set in motion the cascade of changes is our [WebAssembly support](https://github.com/dolittle-interaction/WebAssembly). Our support is still very much a work in progress and we do have things that have yet to be implemented and also a bit of work to be left for optimization and improving the development story. But all in all we're very happy with where we are and what we have got thus far. To get started, please read our [getting started guide](https://dolittle.io/interaction/webassembly/getting_started/). We also presented this at the London PWA meetup earlier this week as you can see [here](https://skillsmatter.com/skillscasts/13836-going-enterprise-in-the-browser). We also have a working ToDo sample that shows how to do a side-by-side server with WebAssembly solution [here](https://github.com/dolittle-samples/ToDolittle).
 
 ## Dolittle Folder
 
@@ -47,3 +47,14 @@ Very important this time around is a general performance boost. This is more a g
 
 A breaking change that was introduced in this version is how the naming of collections are generated when using the `IReadModelRepositoryFor<>` interface for read models. This used to be the name of the type of the readmodel, which turns out to be a very bad strategy if you have two different types with the same name representing two different collections only different namespaces. Right now the strategy has been changed to use the fullname of the type but excluding `Read` if the namespace is prefixed with that. In this way it will in fact, due to our features and module naming convention in namespaces, you'll find the naming to be consistent. We do however have an issue registered for [improving on this](https://github.com/dolittle-extensions/ReadModels.MongoDB/issues/26).
 
+## Known issues
+
+After release, we discovered a couple of things missing:
+
+- Permission denied on some occasions on Windows for the build pipeline - [#220](https://github.com/dolittle-fundamentals/DotNET.Fundamentals/issues/220)
+- Boilerplates for our CLI and VScode extensions out of data - [#28](https://github.com/dolittle-boilerplates/BoundedContext.CSharp/issues/28)
+- Update documentation on changes in our Build pipeline - [#208](https://github.com/dolittle-runtime/DotNET.SDK/issues/208)
+
+These will be taken care of over the next couple of days.
+
+Enjoy!
